@@ -11,7 +11,9 @@ def load_model():
     return tf.keras.models.load_model("sentiment_model")  # load the folder
 
 
-model = load_model()
+with st.spinner("Loading model..."):
+    model = load_model()
+
 
 # ------------------------------
 # Load tokenizer
