@@ -8,7 +8,8 @@ import pickle
 # ------------------------------
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("sentiment_model.h5")
+    return tf.keras.models.load_model("sentiment_model")  # load the folder
+
 
 model = load_model()
 
